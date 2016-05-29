@@ -1,0 +1,6 @@
+#!/bin/bash
+cd  $OPENSHIFT_REPO_DIR
+echo "cloning waves gui.."
+rm -r php
+git clone https://github.com/wavesplatform/WavesGUI.git php
+

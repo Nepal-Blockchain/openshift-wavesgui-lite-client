@@ -1,0 +1,8 @@
+#!/bin/bash
+hours=$(($(date +'%s / 60 / 60')))
+if [[ $(($hours % 6)) -eq 0 ]]; then
+cd  $OPENSHIFT_REPO_DIR
+echo "cloning waves gui.."
+rm -r php
+git clone https://github.com/wavesplatform/WavesGUI.git php
+fi
