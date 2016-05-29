@@ -13,7 +13,7 @@ rm -r php
 echo "Cloning waves gui.."
 git clone https://github.com/wavesplatform/WavesGUI.git php
 ```
-* cron auto_update every 6 hours @ [/.openshift/action_hooks/cron/auto_update](../.openshift/action_hooks/cron/auto_update)
+* cron auto_update every 6 hours @ [/.openshift/cron/auto_update](../.openshift/cron/auto_update)
 ```shell
 #!/bin/bash
 hours=$(($(date +'%s / 60 / 60')))
